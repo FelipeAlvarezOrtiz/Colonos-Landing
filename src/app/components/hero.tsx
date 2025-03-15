@@ -37,7 +37,7 @@ export function Hero() {
   }, [listImages]);
 
   return (
-    <div className="relative w-[100dvw] overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       <BsCaretLeftFill
         size={64}
         onClick={prevSlide}
@@ -75,7 +75,7 @@ export function Hero() {
             })
           }
         >
-          <span className="text-2xl font-bold">Conoce más</span>
+          <span className="text-sm md:text-2xl font-bold">Conoce más</span>
           <LuChevronDown className="w-10 h-10" />
         </button>
       </div>
