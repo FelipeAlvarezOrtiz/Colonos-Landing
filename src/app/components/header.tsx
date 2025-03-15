@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { LuMenu, LuX } from "react-icons/lu";
-import { Button, Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 type NavLinksType = {
   name: string;
