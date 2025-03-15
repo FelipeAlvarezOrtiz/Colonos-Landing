@@ -30,11 +30,11 @@ export function Hero() {
   };
 
   useEffect(() => {
-    const interval = setTimeout(() => {
+    const interval = setInterval(() => {
       nextSlide();
     }, 5000);
     return () => clearInterval(interval);
-  }, [listImages]);
+  }, [listImages, nextSlide]);
 
   return (
     <div className="relative w-full overflow-hidden">
