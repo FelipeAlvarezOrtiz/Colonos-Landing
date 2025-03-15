@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import { BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
 import SliderImg1 from "../../assets/Slider1.webp";
 import SliderImg2 from "../../assets/Slider2.webp";
@@ -10,24 +10,30 @@ import { LuChevronDown } from "react-icons/lu";
 
 export function Hero() {
   const [selectedIndex, setSelectedIndex] = useState(1);
-  const sliders = [SliderImg1, SliderImg2, SliderImg3, SliderImg4];
-  const listImages = [sliders[sliders.length - 1], ...sliders, sliders[0]];
+  const sliders = useMemo(
+    () => [SliderImg1, SliderImg2, SliderImg3, SliderImg4],
+    []
+  );
+  const listImages = useMemo(
+    () => [sliders[sliders.length - 1], ...sliders, sliders[0]],
+    [sliders]
+  );
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     if (selectedIndex === 0) {
       setSelectedIndex(listImages.length - 3);
     } else {
       setSelectedIndex((prevIndex) => prevIndex - 1);
     }
-  };
+  }, [selectedIndex, listImages.length]);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     if (listImages.length - 1 === selectedIndex) {
       setSelectedIndex(2);
     } else {
       setSelectedIndex((prevIndex) => prevIndex + 1);
     }
-  };
+  }, [selectedIndex, listImages.length]);
 
   useEffect(() => {
     const interval = setInterval(() => {
