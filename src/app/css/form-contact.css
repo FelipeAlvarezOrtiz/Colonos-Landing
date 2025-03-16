@@ -1,0 +1,15 @@
+.btn-transition {
+  transition: background-color 0.3s;
+}
+
+.btn-transition:hover {
+  background-color: #4fc685;
+}
+
+.valid:focus {
+  outline: 2px solid #4fc685;
+}
+
+.invalid:focus {
+  outline: 2px solid red;
+}

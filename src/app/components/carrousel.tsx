@@ -14,6 +14,11 @@ import BrocoliIcon from "../../assets/images/BrocoloIcon.webp";
 import ChocloIcon from "../../assets/images/ChocloIcon.webp";
 import LogoLosColonos from "../../assets/images/Logo_LC_blanco.webp";
 import LogoLider from "../../assets/Logo_Lider.png";
+import BannerTop from "../../assets/bannerTop.svg";
+import BannerBottom from "../../assets/bannerBottom.svg";
+import Ornamento1 from "../../assets/Ornamento1.webp";
+import Ornamento2 from "../../assets/Ornamento2.webp";
+import IconClick from "../../assets/IconClick.svg";
 import "../css/carrousel.css";
 
 export function Carrousel() {
@@ -135,22 +140,61 @@ export function Carrousel() {
         </div>
       </div>
       {/* Banner bottom */}
-      {/* TODO: Aca quede */}
-      <div className="section-products__footer">
-        <span>Agricola Los Colonos:</span>
-        <p>Innovación y tradición en Cada Cosecha</p>
+      <div className="relative h-[333px] flex justify-end items-center flex-col">
+        <Image
+          src={BannerTop}
+          width={300}
+          height={300}
+          alt="Banner Top"
+          className="w-full h-full absolute -z-10"
+        />
+        <span className="text-[22px] font-stretch-normal line-height-[22px] text-white">
+          Agricola Los Colonos:
+        </span>
+        <p className="text-[22px] font-stretch-normal line-height-[22px] text-white pb-8">
+          Innovación y tradición en Cada Cosecha
+        </p>
       </div>
-      <div className="section-products__footer--bottom">
-        <div className="content">
-          <div className="content__img--left" />
-          <div className="content__description">
-            <div className="content__description--image-clic" />
+      <div className="relative w-full h-[339px]">
+        <Image
+          src={BannerBottom}
+          width={200}
+          height={200}
+          alt="Banner Bottom"
+          className="w-full h-[60%] absolute -z-10"
+        />
+        <div className="absolute top-0 left-0 w-full h-full flex justify-between items-center">
+          <Image
+            src={Ornamento1}
+            width={300}
+            height={300}
+            alt="Ornamento 1"
+            className="w-[200px] md:w-[500px]"
+          />
+          <div className="flex items-end w-1/2 h-full justify-center">
+            <Image
+              src={IconClick}
+              width={300}
+              height={300}
+              alt="Icon Click"
+              className="w-[50px] md:w-[100px]"
+            />
             <div>
-              <h2>Estamos a</h2>
-              <p>un clic de distancia.</p>
+              <h2 className="text-[22px] md:text-[44px] font-bold text-left text-[#4fc685] m-0 p-0">
+                Estamos a
+              </h2>
+              <p className="text-[22px] md:text-[44px] text-left text-[#4fc685] m-0 p-0">
+                un clic de distancia.
+              </p>
             </div>
           </div>
-          <div className="content__img--right" />
+          <Image
+            src={Ornamento2}
+            width={300}
+            height={300}
+            alt="Ornamento 2"
+            className="w-[200px] md:w-[500px]"
+          />
         </div>
       </div>
     </div>
