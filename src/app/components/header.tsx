@@ -55,14 +55,22 @@ export function Header() {
                       className="absolute top-10 w-32"
                     />
                   </div>
-                  <Link key={link.name} to={link.href} className="item-navbar">
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="item-navbar notosans"
+                  >
                     {link.name}
                   </Link>
                 </>
               );
             }
             return (
-              <Link key={link.name} to={link.href} className="item-navbar">
+              <Link
+                key={link.name}
+                to={link.href}
+                className="item-navbar notosans"
+              >
                 {link.name}
               </Link>
             );

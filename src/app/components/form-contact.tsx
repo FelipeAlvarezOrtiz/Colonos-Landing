@@ -103,14 +103,14 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
   return (
     <div className="flex justify-center px-[16px] pt-[64px] md:p-[80px] mb-[80px]">
       <div className="max-w-[870px] h-auto px-[16px] md:px-[48px] py-[16px] outline-solid outline-[3px] outline-[#4fc685] rounded-[32px]">
-        <h4 className="text-center font-normal font-stretch-normal line-height-[24px] text-[#1a3b2a] text-md md:text-[25px]">
+        <h4 className="text-center font-normal font-stretch-normal line-height-[24px] text-[#1a3b2a] text-md md:text-[25px] raleway">
           Envianos tus dudas o tu interés en trabajar con nosotros y te
           contactaremos pronto.
         </h4>
         <div className="flex flex-wrap justify-between gap-[32px] mt-[32px]">
           <input
             type="text"
-            className={`w-full md:w-[43%] h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal  ${
+            className={`w-full md:w-[43%] h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal raleway  ${
               validName
                 ? "border-[#4fc685] border-[1px] border-solid valid"
                 : "border-red-500 border-[1px] border-solid invalid"
@@ -124,7 +124,7 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
           <input
             type="number"
             maxLength={12}
-            className={`w-full md:w-[43%] h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal ${
+            className={`w-full md:w-[43%] h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal raleway ${
               validPhone
                 ? "border-[#4fc685] border-[1px] border-solid valid"
                 : "border-red-500 border-[1px] border-solid invalid"
@@ -137,7 +137,7 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
           />
           <input
             type="email"
-            className={`w-full h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal ${
+            className={`w-full h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal raleway ${
               validEmail
                 ? "border-[#4fc685] border-[1px] border-solid valid"
                 : "border-red-500 border-[1px] border-solid invalid"
@@ -149,7 +149,7 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
             }
           />
           <textarea
-            className={`w-full h-[150px] rounded-[16px] p-[16px] text-[16px] font-stretch-normal text-[#1a3b2a] ${
+            className={`w-full h-[150px] rounded-[16px] p-[16px] text-[16px] font-stretch-normal text-[#1a3b2a] raleway ${
               validMessage
                 ? "border-[#4fc685] border-[1px] border-solid valid"
                 : "border-red-500 border-[1px] border-solid invalid"
@@ -163,7 +163,7 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
           ></textarea>
         </div>
         <button
-          className="w-full h-[50px] rounded-[16px] bg-[#1a3b2a] text-white text-[16px] text-center cursor-pointer border-0 mt-[32px] btn-transition "
+          className="w-full h-[50px] rounded-[16px] bg-[#1a3b2a] text-white text-[16px] text-center cursor-pointer border-0 mt-[32px] btn-transition raleway "
           onClick={handleClickForm}
         >
           Enviar
@@ -171,7 +171,7 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
         {clearInputs && (
           <div>
             {!errorMail ? (
-              <div className="flex">
+              <div className="flex items-center pt-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1.2em"
@@ -184,7 +184,7 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
                     d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"
                   ></path>
                 </svg>
-                <p className="text-[#1a3b2a] text-center text-[24px]">
+                <p className="text-[#1a3b2a] text-center text-[24px] raleway">
                   Hemos recibido tu mensaje, responderemos lo más pronto
                   posible!{" "}
                 </p>
@@ -205,7 +205,7 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <p className="text-red-500 text-center text-[24px]">
+                <p className="text-red-500 text-center text-[24px] raleway">
                   No hemos podido enviar tu mensaje, intenta nuevamente o mas
                   tarde{" "}
                 </p>

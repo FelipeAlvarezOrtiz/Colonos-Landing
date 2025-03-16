@@ -99,7 +99,7 @@ export function Carrousel() {
         </div>
       </div>
       <div className="section-products__content">
-        <h2 className="text-center text-3xl md:text-[64px] font-bold font-stretch-normal line-height-[64px] font-[#1a3b2a] mt-[50px] md:mt-[141px] mr-[2px] mb-[53px] ml-[1px]">
+        <h2 className="text-center text-3xl md:text-[64px] font-bold font-stretch-normal line-height-[64px] font-[#1a3b2a] mt-[50px] md:mt-[141px] mr-[2px] mb-[53px] ml-[1px] raleway">
           Nuestros Productos
         </h2>
         <div className="flex justify-center items-center flex-wrap gap-[80px] m-auto max-w-[1200px]">
@@ -115,18 +115,18 @@ export function Carrousel() {
                 alt={`${icon.label}-img`}
                 className="w-[50px] md:w-[100px] h-[50px] md:h-[100px]"
               />
-              <p className="text-md md:text-[27px] font-bold font-stretch-normal line-height-[27px] font-[#1a3b2a] text-center">
+              <p className="text-md md:text-[27px] font-bold font-stretch-normal line-height-[27px] font-[#1a3b2a] text-center raleway">
                 {icon.label}
               </p>
             </div>
           ))}
-          <p className="px-5 md:px-0 text-[27px] font-bold font-stretch-normal line-height-[27px] font-[#1a3b2a] text-center">
+          <p className="px-5 md:px-0 text-[27px] font-bold font-stretch-normal line-height-[27px] font-[#1a3b2a] text-center raleway">
             ...alcachofa, betarraga y más
           </p>
         </div>
       </div>
       <div className="px-5 md:px-0 flex flex-col md:flex-row justify-center items-center mt-[32px]">
-        <h2 className="text-[27px] md:text-[48px] font-bold font-stretch-normal mr-4 line-height-[64px] font-[#1a3b2a]">
+        <h2 className="text-[27px] md:text-[48px] font-bold font-stretch-normal mr-4 line-height-[64px] font-[#1a3b2a] raleway">
           Nos encuentras en
         </h2>
         <div className="">
@@ -148,10 +148,10 @@ export function Carrousel() {
           alt="Banner Top"
           className="w-full h-full absolute -z-10"
         />
-        <span className="text-[22px] font-stretch-normal line-height-[22px] text-white">
+        <span className="text-[22px] font-stretch-normal line-height-[22px] text-white raleway">
           Agricola Los Colonos:
         </span>
-        <p className="text-[22px] font-stretch-normal line-height-[22px] text-white pb-8">
+        <p className="text-[22px] font-stretch-normal line-height-[22px] text-white pb-8 raleway">
           Innovación y tradición en Cada Cosecha
         </p>
       </div>

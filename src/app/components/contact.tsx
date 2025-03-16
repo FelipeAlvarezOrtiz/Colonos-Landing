@@ -1,5 +1,4 @@
-"use client";
-
+import { useState } from "react";
 import { FormContact } from "./form-contact";
 
 type PropsForm = {
@@ -10,7 +9,7 @@ type PropsForm = {
 };
 
 export function Contact() {
-  let clearInputs = false;
+  const [clearInputs, setClearInputs] = useState(false);
 
   const handleSendMail = async (data: PropsForm) => {
     await fetch("https://mail-sender.neonexus.cl/api/send", {
@@ -21,11 +20,16 @@ export function Contact() {
       body: JSON.stringify({ ...data, phone: String(data.phone) }),
     })
       .then(() => {
-        clearInputs = true;
+        setClearInputs(true);
       })
       .catch((error) => {
         console.error("Error al enviar el correo:", error);
       });
+    //   .finally(() => {
+    //     setTimeout(() => {
+    //       setClearInputs(false);
+    //     }, 15000);
+    //   });
   };
 
   return (

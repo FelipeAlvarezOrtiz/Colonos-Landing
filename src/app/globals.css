@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.notosans {
+  font-family: var(--font-notosans);
+}
+
+.poppins {
+  font-family: var(--font-poppins);
+}
+
+.raleway {
+  font-family: var(--font-raleway);
+}

@@ -33,7 +33,7 @@ export function History() {
         </div>
 
         {/* Main heading */}
-        <h1 className="absolute w-full  md:top-[18px] lg:top-[50px] text-white text-2xl md:text-4xl lg:text-6xl font-bold text-center z-10">
+        <h1 className="absolute w-full  md:top-[18px] lg:top-[50px] text-white text-2xl md:text-4xl lg:text-6xl font-bold text-center z-10 poppins">
           Nuestra Historia
         </h1>
         <div>
@@ -58,14 +58,14 @@ export function History() {
       <div className="max-w-7xl mx-auto px-4 pt-20 md:pt-40 lg:pt-80">
         <div className="bg-white p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-light text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-light text-gray-800 poppins">
               Innovación y Tradición
-              <span className="block text-[#1B4332] font-semibold">
+              <span className="block text-[#1B4332] font-semibold poppins">
                 en Cada Cosecha
               </span>
             </h2>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed poppins">
               Agrícola los Colonos nace hace más de 50 años por inmigrantes
               italianos, que comenzaron a integrarse en la agricultura y luego
               con ayuda de la segunda y terceras generaciones se fue potenciando
