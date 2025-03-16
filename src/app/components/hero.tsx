@@ -47,7 +47,7 @@ export function Hero() {
       <BsCaretLeftFill
         size={64}
         onClick={prevSlide}
-        className="absolute top-[50%] transform -translate-y-1/2 left-5 z-10 cursor-pointer"
+        className="absolute w-8 h-8 md:w-16 md:h-16 top-[50%] transform -translate-y-1/2 left-5 z-10 cursor-pointer text-white"
       />
       <div
         className="flex transition duration-500 ease-in-out"
@@ -67,11 +67,11 @@ export function Hero() {
       <BsCaretRightFill
         size={64}
         onClick={nextSlide}
-        className="absolute top-[50%] transform -translate-y-1/2 right-5 cursor-pointer"
+        className="absolute w-8 h-8 md:w-16 md:h-16 top-[50%] transform -translate-y-1/2 right-5 cursor-pointer"
         color="#FFFFFF"
       />
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce ">
+      <div className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce ">
         <button
           className="flex flex-col items-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer"
           onClick={() =>

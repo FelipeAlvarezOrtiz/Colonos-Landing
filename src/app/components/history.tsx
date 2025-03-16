@@ -13,7 +13,7 @@ export function History() {
       {/* Top curved section with illustrations */}
       <div className="relative">
         {/* Decorative vegetables - you may want to replace these with actual SVG icons */}
-        <div className="mask absolute top-0 left-0 z-0 w-full h-[200px]">
+        <div className="mask absolute top-0 left-0 z-0 w-full ">
           <svg
             id="visual"
             viewBox="0 0 960 540"
@@ -33,7 +33,7 @@ export function History() {
         </div>
 
         {/* Main heading */}
-        <h1 className="absolute w-full top-[10px] md:top-[18px] lg:top-[50px] text-white text-2xl md:text-4xl lg:text-6xl font-bold text-center z-10">
+        <h1 className="absolute w-full  md:top-[18px] lg:top-[50px] text-white text-2xl md:text-4xl lg:text-6xl font-bold text-center z-10">
           Nuestra Historia
         </h1>
         <div>
@@ -44,7 +44,6 @@ export function History() {
             alt="Ornamento Izquierdo"
             className="hidden md:block absolute left-0 top-0 z-0 pt-10 pl-10 md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px]"
           />
-          <h1>Nuestra Historia</h1>
           <Image
             width={400}
             height={400}
@@ -92,7 +91,7 @@ export function History() {
         alt="Banner Bottom"
         width={1920}
         height={1080}
-        className="w-full h-[500px] object-cover"
+        className="w-full h-[150px] md:h-[500px] object-cover"
       />
     </section>
   );

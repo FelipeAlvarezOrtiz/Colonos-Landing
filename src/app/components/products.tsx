@@ -1,5 +1,3 @@
-export function Products(){
-    return (
-        <span>products</span>
-    )
+export function Products() {
+  return <span>products</span>;
 }

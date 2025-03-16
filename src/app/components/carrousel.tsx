@@ -63,19 +63,19 @@ export function Carrousel() {
           width={1920}
           height={1080}
           alt="Banner Los Colonos"
-          className="w-full h-[288px]"
+          className="w-full h-[150px] md:w-full md:h-[288px]"
         />
         <Image
           src={LogoLosColonos}
           width={400}
           height={300}
           alt="Banner Los Colonos"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  h-[170px]"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[150px] md:w-auto h-[80px]  md:h-[170px]"
         />
       </div>
 
       <div className="overflow-hidden w-full flex justify-center items-center ">
-        <div className="flex h-[200px] md:h-[288px] track">
+        <div className="flex h-[100px] md:h-[288px] track">
           {images.concat(images).map(
             (
               image,
@@ -94,38 +94,44 @@ export function Carrousel() {
         </div>
       </div>
       <div className="section-products__content">
-        <h2 className="text-center text-[36px] md:text-[64px] font-bold font-stretch-normal line-height-[64px] font-[#1a3b2a] mt-[141px] mr-[2px] mb-[53px] ml-[1px]">
+        <h2 className="text-center text-3xl md:text-[64px] font-bold font-stretch-normal line-height-[64px] font-[#1a3b2a] mt-[50px] md:mt-[141px] mr-[2px] mb-[53px] ml-[1px]">
           Nuestros Productos
         </h2>
         <div className="flex justify-center items-center flex-wrap gap-[80px] m-auto max-w-[1200px]">
           {listIcons.map((icon) => (
             <div
               key={icon.label}
-              className="max-w-[100px] flex flex-col items-center gap-[20px] justify-center"
+              className="px-5 md:px-0 max-w-[100px] flex flex-col items-center gap-[20px] justify-center"
             >
               <Image
                 width={400}
                 height={400}
                 src={icon.icon}
                 alt={`${icon.label}-img`}
-                className="section-products__image"
+                className="w-[50px] md:w-[100px] h-[50px] md:h-[100px]"
               />
-              <p className="text-[27px] font-bold font-stretch-normal line-height-[27px] font-[#1a3b2a] text-center">
+              <p className="text-md md:text-[27px] font-bold font-stretch-normal line-height-[27px] font-[#1a3b2a] text-center">
                 {icon.label}
               </p>
             </div>
           ))}
-          <p className="text-[27px] font-bold font-stretch-normal line-height-[27px] font-[#1a3b2a] text-center">
+          <p className="px-5 md:px-0 text-[27px] font-bold font-stretch-normal line-height-[27px] font-[#1a3b2a] text-center">
             ...alcachofa, betarraga y más
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center mt-[32px]">
-        <h2 className="text-[32px] md:text-[48px] font-bold font-stretch-normal mr-4 line-height-[64px] font-[#1a3b2a]">
+      <div className="px-5 md:px-0 flex flex-col md:flex-row justify-center items-center mt-[32px]">
+        <h2 className="text-[27px] md:text-[48px] font-bold font-stretch-normal mr-4 line-height-[64px] font-[#1a3b2a]">
           Nos encuentras en
         </h2>
         <div className="">
-          <Image width={300} height={300} src={LogoLider} alt="Logo Walmart" />
+          <Image
+            width={300}
+            height={300}
+            src={LogoLider}
+            alt="Logo Walmart"
+            className="w-[200px] md:w-[300px] "
+          />
         </div>
       </div>
       {/* Banner bottom */}
