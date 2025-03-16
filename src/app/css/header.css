@@ -1,0 +1,50 @@
+.item-navbar {
+  position: relative;
+  width: 100px;
+  text-align: center;
+
+  a {
+    color: #1a3b2a;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding-bottom: 0.4rem;
+    font-family: "Aller";
+    font-size: 1.15rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.item-navbar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: #1a3b2a; /* Background color on hover */
+  transition: height 0.3s, font-style 0.3s, color 0.3s;
+  z-index: -1;
+}
+
+.item-navbar:hover::before {
+  height: 100%;
+}
+.item-navbar:hover {
+  color: #fff;
+  font-style: italic;
+}
+
+.item-navbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 0.25rem;
+  background-color: #1a3b2a;
+}

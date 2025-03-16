@@ -1,3 +1,5 @@
+"use client";
+import { Element } from "react-scroll";
 import {
   Carrousel,
   Contact,
@@ -12,10 +14,18 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <Hero />
-        <History />
-        <Carrousel />
-        <Contact />
+        <Element name="root">
+          <Hero />
+        </Element>
+        <Element name="history">
+          <History />
+        </Element>
+        <Element name="products">
+          <Carrousel />
+        </Element>
+        <Element name="contact">
+          <Contact />
+        </Element>
       </main>
       <Footer />
     </div>
