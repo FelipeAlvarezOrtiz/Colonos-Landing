@@ -1,5 +1,7 @@
 # Proyecto Los Colonos
 
+![Los Colonos](./src//assets//images/Logo_LC.webp)
+
 Landing page que permite dar a conocer los productos de la empresa Los Colonos. Además cuenta con un formulario de contacto.
 
 ## Primeros pasos
@@ -12,7 +14,7 @@ npm install
 npm run dev
 ```
 
-## Librerías utilizadas
+## Recursos utilizados
 
 - [Next.js](https://nextjs.org)
 - [React](https://reactjs.org)
