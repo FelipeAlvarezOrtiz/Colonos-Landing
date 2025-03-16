@@ -131,11 +131,10 @@ export function Carrousel() {
         </h2>
         <div className="">
           <Image
-            width={300}
-            height={300}
+            style={{ height: "auto" }}
             src={LogoLider}
             alt="Logo Walmart"
-            className="w-[200px] md:w-[300px] "
+            className="w-[200px] h-auto md:w-[300px] "
           />
         </div>
       </div>
@@ -151,7 +150,7 @@ export function Carrousel() {
         <span className="text-[22px] font-stretch-normal line-height-[22px] text-white raleway">
           Agricola Los Colonos:
         </span>
-        <p className="text-[22px] font-stretch-normal line-height-[22px] text-white pb-8 raleway">
+        <p className="text-sm md:text-[22px] font-bold text-center font-stretch-normal line-height-[22px] text-white pb-8 raleway">
           Innovación y tradición en Cada Cosecha
         </p>
       </div>
