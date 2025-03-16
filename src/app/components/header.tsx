@@ -44,7 +44,7 @@ export function Header() {
           {navLinks.map((link, index) => {
             if (index === 2) {
               return (
-                <div key={`nav-${index}`}>
+                <div key={link.name} className="inline-flex items-center">
                   <div className="relative h-[78px] w-[208px] flex items-center justify-center">
                     <div className="absolute top-15 left-0 w-[208px] h-[100px] bg-white opacity-90 border-0 rounded-b-full" />
                     <Image
@@ -58,7 +58,7 @@ export function Header() {
                   <Link
                     key={link.name}
                     to={link.href}
-                    className="item-navbar notosans"
+                    className="item-navbar ml-4 notosans"
                   >
                     {link.name}
                   </Link>
