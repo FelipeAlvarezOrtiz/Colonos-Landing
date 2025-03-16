@@ -4,11 +4,12 @@ import Image from "next/image";
 import TomatoImg from "../../assets/Tomato.webp";
 import OrnamentoLeft from "../../assets/Ornamento1.webp";
 import OrnamentoRight from "../../assets/Ornamento2.webp";
+import BannerBottom from "../../assets/images/BannerBottomHistory.webp";
 import "../css/history.css";
 
 export function History() {
   return (
-    <section className="relative w-full h-[800] bg-white ">
+    <section className="relative w-full  bg-white ">
       {/* Top curved section with illustrations */}
       <div className="relative">
         {/* Decorative vegetables - you may want to replace these with actual SVG icons */}
@@ -55,7 +56,7 @@ export function History() {
       </div>
 
       {/* Main content section */}
-      <div className="max-w-7xl mx-auto px-4 mb-20 pt-20 md:pt-40 lg:pt-80">
+      <div className="max-w-7xl mx-auto px-4 pt-20 md:pt-40 lg:pt-80">
         <div className="bg-white p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2 space-y-6">
             <h2 className="text-3xl md:text-4xl font-light text-gray-800">
@@ -86,6 +87,13 @@ export function History() {
           </div>
         </div>
       </div>
+      <Image
+        src={BannerBottom}
+        alt="Banner Bottom"
+        width={1920}
+        height={1080}
+        className="w-full h-[500px] object-cover"
+      />
     </section>
   );
 }
