@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <div className="relative h-[300px] w-full flex justify-around items-center">
+    <div className="relative h-[300px] w-full flex flex-col md:flex-row justify-start md:justify-around items-center">
       <Image
         src={BackgroundFooter}
         width={1920}
@@ -18,7 +18,7 @@ export function Footer() {
         alt="Background Footer"
         className="w-full h-full absolute -z-10"
       />
-      <div className="pb-[80px] pt-[80px]">
+      <div className="flex flex-col items-center md:block pb-[20px] md:pb-[80px] pt-[80px]">
         <div className="flex gap-[16px] pb-[16px]">
           <a href="https://www.facebook.com/">
             <FaFacebookSquare color="#FFFFFF" size={32} />
@@ -30,9 +30,9 @@ export function Footer() {
             <TbBrandWhatsapp color="#FFFFFF" size={32} />
           </a>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center justify-center w-full text-center px-16 md:px-0">
           <IoMdPin color="#FFFFFF" size={32} />
-          <p className="inline-block text-white ">
+          <p className="inline-block text-white text-cen ">
             Estancia Barriales S/N, Pan de Azúcar, Coquimbo.{" "}
           </p>
         </div>

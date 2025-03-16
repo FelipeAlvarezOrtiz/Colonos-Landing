@@ -155,7 +155,7 @@ export function Carrousel() {
           Innovación y tradición en Cada Cosecha
         </p>
       </div>
-      <div className="relative w-full h-[339px]">
+      <div className="relative w-full h-[100px] md:h-[339px]">
         <Image
           src={BannerBottom}
           width={200}
@@ -163,15 +163,15 @@ export function Carrousel() {
           alt="Banner Bottom"
           className="w-full h-[60%] absolute -z-10"
         />
-        <div className="absolute top-0 left-0 w-full h-full flex justify-between items-center">
+        <div className="mt-8 md:mt-0 absolute top-0 left-0 w-full h-full flex justify-between items-center">
           <Image
             src={Ornamento1}
             width={300}
             height={300}
             alt="Ornamento 1"
-            className="w-[200px] md:w-[500px]"
+            className="hidden md:block w-[200px] md:w-[500px]"
           />
-          <div className="flex items-end w-1/2 h-full justify-center">
+          <div className="flex w-full items-center md:items-end md:w-1/2 md:h-full justify-center">
             <Image
               src={IconClick}
               width={300}
@@ -193,7 +193,7 @@ export function Carrousel() {
             width={300}
             height={300}
             alt="Ornamento 2"
-            className="w-[200px] md:w-[500px]"
+            className="hidden md:block w-[200px] md:w-[500px]"
           />
         </div>
       </div>

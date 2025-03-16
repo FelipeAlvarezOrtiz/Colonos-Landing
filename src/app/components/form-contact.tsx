@@ -101,16 +101,16 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
   };
 
   return (
-    <div className="flex justify-center p-[80px] mb-[80px]">
-      <div className="max-w-[870px] h-auto px-[48px] py-[16px] outline-solid outline-[3px] outline-[#4fc685] rounded-[32px]">
-        <h4 className="text-center font-normal font-stretch-normal line-height-[24px] text-[#1a3b2a] text-[25px]">
+    <div className="flex justify-center px-[16px] pt-[64px] md:p-[80px] mb-[80px]">
+      <div className="max-w-[870px] h-auto px-[16px] md:px-[48px] py-[16px] outline-solid outline-[3px] outline-[#4fc685] rounded-[32px]">
+        <h4 className="text-center font-normal font-stretch-normal line-height-[24px] text-[#1a3b2a] text-md md:text-[25px]">
           Envianos tus dudas o tu interés en trabajar con nosotros y te
           contactaremos pronto.
         </h4>
         <div className="flex flex-wrap justify-between gap-[32px] mt-[32px]">
           <input
             type="text"
-            className={`w-[43%] h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal  ${
+            className={`w-full md:w-[43%] h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal  ${
               validName
                 ? "border-[#4fc685] border-[1px] border-solid valid"
                 : "border-red-500 border-[1px] border-solid invalid"
@@ -124,7 +124,7 @@ export function FormContact({ handleSendMail, clearInputs = false }: Props) {
           <input
             type="number"
             maxLength={12}
-            className={`w-[43%] h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal ${
+            className={`w-full md:w-[43%] h-[50px] rounded-[16px] px-[16px] text-[16px] font-stretch-normal ${
               validPhone
                 ? "border-[#4fc685] border-[1px] border-solid valid"
                 : "border-red-500 border-[1px] border-solid invalid"
