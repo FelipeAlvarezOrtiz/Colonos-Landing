@@ -1,0 +1,7 @@
+.footer-bg {
+  width: 100% !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/BackgroundFooter.svg");
+}

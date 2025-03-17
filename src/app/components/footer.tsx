@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { TbBrandWhatsapp } from "react-icons/tb";
 import { IoMdPin } from "react-icons/io";
 import BackgroundFooter from "../../assets/BackgroundFooter.svg";
 import LogoLosColonos from "../../assets/images/Logo_LC_blanco.webp";
-import Image from "next/image";
+import "../css/footer.css";
 
 export function Footer() {
   return (
@@ -16,7 +17,7 @@ export function Footer() {
         width={1920}
         height={1080}
         alt="Background Footer"
-        className="w-full h-full absolute -z-10"
+        className="footer-bg w-full h-full absolute -z-10"
       />
       <div className="flex flex-col items-center md:block pb-[20px] md:pb-[80px] pt-[80px]">
         <div className="flex gap-[16px] pb-[16px]">
