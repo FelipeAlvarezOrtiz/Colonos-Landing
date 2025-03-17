@@ -24,12 +24,12 @@ export function Contact() {
       })
       .catch((error) => {
         console.error("Error al enviar el correo:", error);
-      })
-      .finally(() => {
-        setTimeout(() => {
-          setClearInputs(false);
-        }, 15000);
       });
+    //   .finally(() => {
+    //     setTimeout(() => {
+    //       setClearInputs(false);
+    //     }, 15000);
+    //   });
   };
 
   return (
