@@ -10,3 +10,19 @@
     transform: translateX(-100%);
   }
 }
+
+.banner-top {
+  width: 100% !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/bannerTop.svg");
+}
+
+.banner-bottom {
+  width: 100% !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/bannerBottom.svg");
+}

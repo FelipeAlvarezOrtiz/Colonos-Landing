@@ -145,7 +145,7 @@ export function Carrousel() {
           width={300}
           height={300}
           alt="Banner Top"
-          className="w-full h-full absolute -z-10"
+          className="banner-top w-full h-full absolute -z-10"
         />
         <span className="text-[22px] font-stretch-normal line-height-[22px] text-white raleway">
           Agricola Los Colonos:
@@ -160,7 +160,7 @@ export function Carrousel() {
           width={200}
           height={200}
           alt="Banner Bottom"
-          className="w-full h-[60%] absolute -z-10"
+          className="banner-bottom w-full h-[60%] absolute -z-10"
         />
         <div className="mt-8 md:mt-0 absolute top-0 left-0 w-full h-full flex justify-between items-center">
           <Image
